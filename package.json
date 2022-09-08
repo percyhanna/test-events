@@ -1,0 +1,31 @@
+{
+  "name": "percyhanna.test-events",
+  "description": "Testing events",
+  "version": "0.0.0",
+  "author": "percyhanna",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.0"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "events": {
+        "testEvent": {
+          "title": "Test events",
+          "entryPoint": "src/events/testEvent.js",
+          "handles": [
+            "aha.create.Comment",
+            "aha.update.Comment"
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}
