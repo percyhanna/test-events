@@ -16,4 +16,3 @@ const handler = async (payload) => {
 };
 
 aha.on({ event: "aha.create.Comment" }, handler);
-aha.on({ event: "aha.update.Comment" }, handler);
